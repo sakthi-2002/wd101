@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Form For Registration</title>
+  <link rel="stylesheet" href="style.css" />
+  <img src="image.jpg" alt="imaGE" style="width: 250px; float: left; padding-top: 20%; padding-left: 10%;">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <div class="center">
+    <h1>FORM FOR REGISTRATION</h1>
+  </div>
+</br>
+</br>
+
+
+  <div class="center">
+    <form id="form-for-registration" style="border: 5%">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter name" id="name" required />
+        <span aria-hidden="true" class="required" style="color: red;">*</span>
+      </div>
+      <br />
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter e-mail " id="email" required />
+        <span aria-hidden="true" class="required" style="color: red;">*</span>
+      </div>
+      <br />
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter private key" id="password" required />
+        <span aria-hidden="true" class="required" style="color: red;">*</span>
+      </div>
+      <br />
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required />
+        <span aria-hidden="true" class="required" style="color: red;">*</span>
+      </div>
+      <br />
+      <div>
+        <label>
+          <input type="checkbox" id="accepted-terms" required />
+          The above given terms and conditions are accepted by me
+        </label>
+      </div>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  
+</br>
+</br>
+
+<div class="center">
+    <h2>Peoples list for Registration</h2>
+
+    <table id="entries-body-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Dob</th>
+          <th>Accepted terms?</th>
+        </tr>
+      </thead>
+      <tbody id="entries-body-table-center"></tbody>
+    </table>
+    <script src="index.js"></script>
+  </div>
+
+</body>
+
+</html>
